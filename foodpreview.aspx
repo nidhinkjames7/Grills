@@ -69,8 +69,13 @@
 					<ul class="main-menu nav navbar-nav navbar-right">
 						<li><a href="home.aspx">Home</a></li>
 						<li><a href="#">Gallery</a></li>
-          <!--              <li><asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList></li>     -->
-                        <li><a href"#">Categoreis</a></li>
+       <!--                      <asp:DropDownList ID="foodcategory" runat="server">
+                               <asp:ListItem>Categories</asp:ListItem>
+                                <asp:ListItem>Cake</asp:ListItem>
+                                <asp:ListItem>Biriyani</asp:ListItem>
+                            </asp:DropDownList>         -->
+                        <li><a href="">Category</a></li>    
+                        <li></li>
 						<li><a href="#">AboutUs</a></li>
 						<li><a href="contactus.aspx">ContactUs</a></li>
                         <li><a href="#">LogOut</a></li>
@@ -97,12 +102,9 @@
 							<h1 class="white-text">BeFoody</h1>
 							<p class="lead white-text">keep calm and love food.</p>
 
-						</div>   
-                            <table>
-                                <tr>
-                                    <td><h3>LET'S ORDER!!!</h3></td>
-                                </tr>
-                            </table>
+						</div>
+                            <h3>LET'S ORDER!!!</h3>
+                            
 					</div>
 				</div>
 			</div>
