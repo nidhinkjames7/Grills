@@ -100,7 +100,9 @@
                                        <td><asp:Label ID="lblfoodname" runat="server" Text="Food Name"></asp:Label><asp:TextBox ID="txtfoodname" runat="server" placeholder="Food Name" requred="requried"></asp:TextBox></td>
                                     </tr>
                                     <tr>
-                                        <td><asp:Label ID="lblfoodimage" runat="server" Text="Food Image"></asp:Label><asp:TextBox ID="txtfoodimage" runat="server" placeholder="Food Image" required="required"></asp:TextBox></td>
+                                        <td>
+                                            <asp:Label ID="lblfoodimage" runat="server" Text="Food Image"></asp:Label><asp:FileUpload ID="FileUpload1" runat="server" />
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>

@@ -2,309 +2,200 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gp Bootstrap Template</title>
-
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link href="css/animate.min.css" rel="stylesheet">
-  <link href="css/prettyPhoto.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
-  <!-- =======================================================
-    Theme Name: Gp
-    Theme URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-templat/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
 </head>
+<body>
+    <div>
+        
 
-<body class="homepage">
-  <header id="header">
-    <nav class="navbar navbar-fixed-top" role="banner">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-          <a class="navbar-brand" href="index.html">Gp.</a>
-        </div>
+        <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <div class="collapse navbar-collapse navbar-right">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li class="active"><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="contact-us.html">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-      <!--/.container-->
-    </nav>
-    <!--/nav-->
+		<title>BeFoody</title>
 
-  </header>
-  <!--/header-->
+		<!-- Google font -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
 
-  <section id="services" class="service-item">
-    <div class="container">
-      <div class="center wow fadeInDown">
-        <h2>Our Service</h2>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-      </div>
+		<!-- Bootstrap -->
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
 
-      <div class="row">
+		<!-- Font Awesome Icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 
-        <div class="col-sm-6 col-md-4">
-          <div class="media services-wrap wow fadeInDown">
-            <div class="pull-left">
-              <img class="img-responsive" src="images/services/services1.png">
-            </div>
-            <div class="media-body">
-              <h3 class="media-heading">SEO Marketing</h3>
-              <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-            </div>
-          </div>
-        </div>
+		<!-- Custom stlylesheet -->
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
 
-        <div class="col-sm-6 col-md-4">
-          <div class="media services-wrap wow fadeInDown">
-            <div class="pull-left">
-              <img class="img-responsive" src="images/services/services2.png">
-            </div>
-            <div class="media-body">
-              <h3 class="media-heading">SEO Marketing</h3>
-              <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-            </div>
-          </div>
-        </div>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
-        <div class="col-sm-6 col-md-4">
-          <div class="media services-wrap wow fadeInDown">
-            <div class="pull-left">
-              <img class="img-responsive" src="images/services/services3.png">
-            </div>
-            <div class="media-body">
-              <h3 class="media-heading">SEO Marketing</h3>
-              <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-            </div>
-          </div>
-        </div>
+    </head>
+	<body>
 
-        <div class="col-sm-6 col-md-4">
-          <div class="media services-wrap wow fadeInDown">
-            <div class="pull-left">
-              <img class="img-responsive" src="images/services/services4.png">
-            </div>
-            <div class="media-body">
-              <h3 class="media-heading">SEO Marketing</h3>
-              <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-            </div>
-          </div>
-        </div>
+		<!-- Header -->
+		<header id="header" class="transparent-nav">
+			<div class="container">
 
-        <div class="col-sm-6 col-md-4">
-          <div class="media services-wrap wow fadeInDown">
-            <div class="pull-left">
-              <img class="img-responsive" src="images/services/services5.png">
-            </div>
-            <div class="media-body">
-              <h3 class="media-heading">SEO Marketing</h3>
-              <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-            </div>
-          </div>
-        </div>
+				<div class="navbar-header">
+					<!-- Logo -->
+					<div class="navbar-brand">
+						<a class="logo" href="index.html">
+							<img src="./img/logo-alt.png" alt="logo">
+						</a>
+					</div>
+					<!-- /Logo -->
 
-        <div class="col-sm-6 col-md-4">
-          <div class="media services-wrap wow fadeInDown">
-            <div class="pull-left">
-              <img class="img-responsive" src="images/services/services6.png">
-            </div>
-            <div class="media-body">
-              <h3 class="media-heading">SEO Marketing</h3>
-              <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/.row-->
+					<!-- Mobile toggle -->
+					<button class="navbar-toggle">
+						<span></span>
+					</button>
+					<!-- /Mobile toggle -->
+				</div>
+
+				<!-- Navigation -->
+                <form runat="server">
+				<nav id="nav">
+					<ul class="main-menu nav navbar-nav navbar-right">
+						<li><a href="home.aspx">Home</a></li>
+						<li><a href="#">Gallery</a></li>
+          <!--              <li><asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList></li>     -->
+                        <li><a href"#">Categoreis</a></li>
+						<li><a href="#">AboutUs</a></li>
+						<li><a href="contactus.aspx">ContactUs</a></li>
+                        <li><a href="#">LogOut</a></li>
+					</ul>
+				</nav>
+                </form>
+				<!-- /Navigation -->
+
+			</div>
+		</header>
+		<!-- /Header -->
+
+		<!-- Home -->
+		<div id="home" class="hero-area">
+
+			<!-- Backgound Image -->
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/bk2.jpeg)"></div>
+			<!-- /Backgound Image -->
+
+			<div class="home-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<h1 class="white-text">BeFoody</h1>
+							<p class="lead white-text">keep calm and love food.</p>
+
+						</div>   
+                            <table>
+                                <tr>
+                                    <td><h3>LET'S ORDER!!!</h3></td>
+                                </tr>
+                            </table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Home -->
+
+
+
+		<!-- Footer -->
+		<footer id="footer" class="section">
+
+			<!-- container -->
+			<div class="container">
+
+				<!-- row -->
+				<div class="row">
+
+					<!-- footer logo -->
+					<div class="col-md-6">
+						<div class="footer-logo">
+							<a class="logo" href="index.html">
+								<img src="./img/logo.png" alt="logo">
+							</a>
+						</div>
+					</div>
+					<!-- footer logo -->
+
+					<!-- footer nav -->
+					<div class="col-md-6">
+						<ul class="footer-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Courses</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+					<!-- /footer nav -->
+               
+				</div>
+				<!-- /row -->
+
+				<!-- row -->
+				<div id="bottom-footer" class="row">
+
+					<!-- social -->
+					<div class="col-md-4 col-md-push-8">
+						<ul class="footer-social">
+							<li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#" class="youtube"><i class="fa fa-youtube"></i></a></li>
+							<li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+						</ul>
+					</div>
+					<!-- /social -->
+
+					<!-- copyright -->
+					<div class="col-md-8 col-md-pull-4">
+						<div class="footer-copyright">
+							<span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></span>
+						</div>
+					</div>
+					<!-- /copyright -->
+
+				</div>
+				<!-- row -->
+
+			</div>
+			<!-- /container -->
+
+		</footer>
+		<!-- /Footer -->
+
+		<!-- preloader -->
+		<div id='preloader'><div class='preloader'></div></div>
+		<!-- /preloader -->
+
+
+		<!-- jQuery Plugins -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+</html>
+
+
+
     </div>
-    <!--/.container-->
-  </section>
-  <!--/#services-->
 
-
-  <section id="feature" class="transparent-bg">
-    <div class="container">
-      <div class="get-started center wow fadeInDown">
-        <h2>Ready to get started</h2>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-        <div class="request">
-          <h4><a href="#">Request a free Quote</a></h4>
-        </div>
-      </div>
-      <!--/.get-started-->
-
-      <div class="clients-area center wow fadeInDown">
-        <h2>What our client says</h2>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4 wow fadeInDown">
-          <div class="clients-comments text-center">
-            <img src="images/client1.png" class="img-circle" alt="">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</h3>
-            <h4><span>-John Doe /</span>  Director of corlate.com</h4>
-          </div>
-        </div>
-        <div class="col-md-4 wow fadeInDown">
-          <div class="clients-comments text-center">
-            <img src="images/client2.png" class="img-circle" alt="">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</h3>
-            <h4><span>-John Doe /</span>  Director of corlate.com</h4>
-          </div>
-        </div>
-        <div class="col-md-4 wow fadeInDown">
-          <div class="clients-comments text-center">
-            <img src="images/client3.png" class="img-circle" alt="">
-            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</h3>
-            <h4><span>-John Doe /</span>  Director of corlate.com</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/.container-->
-  </section>
-  <!--/#feature-->
-
-
-  <section id="bottom">
-    <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
-          <div class="widget">
-            <h3>Company</h3>
-            <ul>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">We are hiring</a></li>
-              <li><a href="#">Meet the team</a></li>
-              <li><a href="#">Copyright</a></li>
-            </ul>
-          </div>
-        </div>
-        <!--/.col-md-3-->
-
-        <div class="col-md-3 col-sm-6">
-          <div class="widget">
-            <h3>Support</h3>
-            <ul>
-              <li><a href="#">Faq</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Forum</a></li>
-              <li><a href="#">Documentation</a></li>
-            </ul>
-          </div>
-        </div>
-        <!--/.col-md-3-->
-
-        <div class="col-md-3 col-sm-6">
-          <div class="widget">
-            <h3>Developers</h3>
-            <ul>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">SEO Marketing</a></li>
-              <li><a href="#">Theme</a></li>
-              <li><a href="#">Development</a></li>
-            </ul>
-          </div>
-        </div>
-        <!--/.col-md-3-->
-
-        <div class="col-md-3 col-sm-6">
-          <div class="widget">
-            <h3>Our Partners</h3>
-            <ul>
-              <li><a href="#">Adipisicing Elit</a></li>
-              <li><a href="#">Eiusmod</a></li>
-              <li><a href="#">Tempor</a></li>
-              <li><a href="#">Veniam</a></li>
-            </ul>
-          </div>
-        </div>
-        <!--/.col-md-3-->
-      </div>
-    </div>
-  </section>
-  <!--/#bottom-->
-
-  <div class="top-bar">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="social">
-            <ul class="social-share">
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/.container-->
-  </div>
-  <!--/.top-bar-->
-
-  <footer id="footer" class="midnight-blue">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          &copy; Gp Theme. All Rights Reserved.
-          <div class="credits">
-            <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Gp
-            -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <ul class="pull-right">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Faq</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!--/#footer-->
-
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.prettyPhoto.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
 
 </body>
-
 </html>
+

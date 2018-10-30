@@ -89,7 +89,7 @@
                                             <td><asp:Button ID="submit" runat="server" Text="Submit" OnClick="submit_Click" /></td>
                                         </tr>						            
                                         <tr>
-                                            <a href="#">SignUp?</a>
+                                            <a href="registration.aspx">SignUp?</a>
                                         </tr>
                                     </form>
                                 </table>
