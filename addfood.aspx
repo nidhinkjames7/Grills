@@ -65,9 +65,11 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="home.aspx">Home</a></li>
+						<li><a href="adminpage.aspx">Admin Home</a></li>
+                        <li><a href="viewfood.aspx">View Food</a></li>
+                        <li><a href="removefood.aspx">Remove Food</a></li>
+                        <li><a href="#">Update Food</a></li>
 						<li><a href="add_gallery_pics.aspx">Add Gallery</a></li>
-                        <li><a href="#">Remove Food</a></li>
 						<li><a href="#">View Bookinig</a></li>
 						<li><a href="#">LogOut</a></li>
 					</ul>
