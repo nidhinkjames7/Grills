@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="contactus.aspx.cs" Inherits="contactus" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="gallery.aspx.cs" Inherits="gallery" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,14 +33,14 @@
 	<body>
 
 		<!-- Header -->
-		<header id="header">
+		<header id="header" class="transparent-nav">
 			<div class="container">
 
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a class="logo" href="index.html">
-							<img src="./img/logo.png" alt="logo">
+							<img src="./img/logo-alt.png" alt="logo">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -57,7 +57,6 @@
 					<ul class="main-menu nav navbar-nav navbar-right">
 						<li><a href="home.aspx">Home</a></li>
 						<li><a href="registration.aspx">Registration</a></li>
-						<li><a href="#">Gallery</a></li>
 						<li><a href="#">AboutUs</a></li>
 						<li><a href="contactus.aspx">ContactUs</a></li>
 					</ul>
@@ -68,77 +67,28 @@
 		</header>
 		<!-- /Header -->
 
-		<!-- Hero-area -->
-		<div class="hero-area section">
+		<!-- Home -->
+		<div id="home" class="hero-area">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/page-background.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/bk2.jpeg)"></div>
 			<!-- /Backgound Image -->
 
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 text-center">
-						<ul class="hero-area-tree">
-							<li><a href="index.html">Home</a></li>
-							<li>Contact</li>
-						</ul>
-						<h1 class="white-text">Get In Touch</h1>
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<!-- /Hero-area -->
-
-		<!-- Contact -->
-		<div id="contact" class="section">
-
-			<!-- container -->
-			<div class="container">
-
-				<!-- row -->
-				<div class="row">
-
-					<!-- contact form -->
-					<div class="col-md-6">
-						<div class="contact-form">
-							<h4>Send A Message</h4>
-							<form>
-								<input class="input" type="text" name="name" placeholder="Name">
-								<input class="input" type="email" name="email" placeholder="Email">
-								<input class="input" type="text" name="subject" placeholder="Subject">
-								<textarea class="input" name="message" placeholder="Enter your Message"></textarea>
-								<button class="main-button icon-button pull-right">Send Message</button>
-							</form>
+			<div class="home-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<h1 class="white-text">BeFoody</h1>
+							<p class="lead white-text">keep calm and love food.</p>
 						</div>
 					</div>
-					<!-- /contact form -->
-
-					<!-- contact information -->
-					<div class="col-md-5 col-md-offset-1">
-						<h4>Contact Information</h4>
-						<ul class="contact-details">
-							<li><i class="fa fa-envelope"></i>Educate@email.com</li>
-							<li><i class="fa fa-phone"></i>122-547-223-45</li>
-							<li><i class="fa fa-map-marker"></i>4476 Clement Street</li>
-						</ul>
-
-						<!-- contact map -->
-						<div id="contact-map"></div>
-						<!-- /contact map -->
-
-					</div>
-					<!-- contact information -->
-
 				</div>
-				<!-- /row -->
-
 			</div>
-			<!-- /container -->
 
 		</div>
-		<!-- /Contact -->
+		<!-- /Home -->
+
+
 
 		<!-- Footer -->
 		<footer id="footer" class="section">
@@ -162,15 +112,15 @@
 					<!-- footer nav -->
 					<div class="col-md-6">
 						<ul class="footer-nav">
-					        <li><a href="home.aspx">Home</a></li>
-						    <li><a href="#">Registration</a></li>
-						    <li><a href="#">Gallery</a></li>
-						    <li><a href="#">AboutUs</a></li>
-						    <li><a href="contactus.aspx">ContactUs</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Courses</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</div>
 					<!-- /footer nav -->
-
+               
 				</div>
 				<!-- /row -->
 
@@ -215,8 +165,6 @@
 		<!-- jQuery Plugins -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-		<script type="text/javascript" src="js/google-map.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 
 	</body>

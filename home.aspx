@@ -57,7 +57,7 @@
 					<ul class="main-menu nav navbar-nav navbar-right">
 						<li><a href="home.aspx">Home</a></li>
 						<li><a href="registration.aspx">Registration</a></li>
-						<li><a href="#">Gallery</a></li>
+						<li><a href="gallery.aspx">Gallery</a></li>
 						<li><a href="#">AboutUs</a></li>
 						<li><a href="contactus.aspx">ContactUs</a></li>
 					</ul>
@@ -81,8 +81,8 @@
 						<div class="col-md-8">
 							<h1 class="white-text">Grills</h1>
 							<p class="lead white-text">Keep Calm And Love Food...!!!</p>
-                                <table>
-                                    <form method="post" runat="server">
+                                <form id="loginform" method="post" runat="server">
+                                    <table>
                                         <tr>
                                             <td><asp:TextBox ID="txtusername" runat="server" placeholder="UserName" required="required"></asp:TextBox></td>
                                             <td><asp:TextBox ID="txtpassword" runat="server" placeholder="Password" required="required" TextMode="Password"></asp:TextBox></td>
@@ -91,8 +91,8 @@
                                         <tr>
                                             <a href="registration.aspx">SignUp?</a>
                                         </tr>
-                                    </form>
-                                </table>
+                                    </table>
+                               </form>
                         </div>
 					</div>
 				</div>

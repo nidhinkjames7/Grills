@@ -39,8 +39,8 @@ body {
 	overflow-x:hidden;
 }
 
-form{
-    color:black;
+.loginform{
+    color:red !important;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -201,7 +201,7 @@ blockquote:before{
 input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="date"], input[type="url"], input[type="tel"], textarea {
     border: 1px solid #EBEBEB;
 	border-radius:4px;
-	background: transparent;
+	background: transparent; 
     padding-left: 15px;
 	padding-right: 15px;
 	-webkit-transition:0.2s border-color;
