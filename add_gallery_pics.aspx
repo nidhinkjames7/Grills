@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="adminpage.aspx.cs" Inherits="adminpage" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="add_gallery_pics.aspx.cs" Inherits="add_gallery_pics" %>
 
 <!DOCTYPE html>
 
@@ -68,7 +68,6 @@
 					<ul class="main-menu nav navbar-nav navbar-right">
 						<li><a href="home.aspx">Home</a></li>
                         <li><a href="addfood.aspx">Add Food</a></li>
-						<li><a href="add_gallery_pics.aspx">Add Gallery</a></li>
                         <li><a href="#">Remove Food</a></li>
 						<li><a href="#">View Bookinig</a></li>
 						<li><a href="#">LogOut</a></li>
@@ -94,6 +93,28 @@
 							<h1 class="white-text">BeFoody</h1>
 							<p class="lead white-text">keep calm and love food.</p>
 						</div>
+                        <h3>HAVE IT...!!!</h3>
+                        <form>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <asp:Label ID="lblfoodnameGallery" runat="server" Text="Food Name"></asp:Label>
+                                        <asp:TextBox ID="txtfoodnameGallery" runat="server" placeholder="Food Name" required="required"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:Label ID="lblimageGallery" runat="server" Text="Food Image"></asp:Label>
+                                        <asp:FileUpload ID="FileUpload1" runat="server" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:Button ID="btnaddimage" runat="server" Text="Add Image" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
 					</div>
 				</div>
 			</div>

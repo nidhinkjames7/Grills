@@ -56,7 +56,7 @@
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
 						<li><a href="home.aspx">Home</a></li>
-						<li><a href="#">Registration</a></li>
+						<li><a href="registration.aspx">Registration</a></li>
 						<li><a href="#">Gallery</a></li>
 						<li><a href="#">AboutUs</a></li>
 						<li><a href="contactus.aspx">ContactUs</a></li>

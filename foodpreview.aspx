@@ -1,19 +1,10 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="foodpreview.aspx.cs" Inherits="foodpreview" %>
 
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <div>
-        
 
         <!DOCTYPE html>
-<html lang="en">
-	<head>
+        <html lang="en">
+	    <head runat="server">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -104,7 +95,7 @@
 
 						</div>
                             <h3>LET'S ORDER!!!</h3>
-                            
+                        
 					</div>
 				</div>
 			</div>
@@ -193,11 +184,4 @@
 	</body>
 </html>
 
-
-
-    </div>
-
-
-</body>
-</html>
 

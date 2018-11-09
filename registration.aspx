@@ -61,7 +61,7 @@
 					<ul class="main-menu nav navbar-nav navbar-right">
 						<li><a href="home.aspx">Home</a></li>
 						<li><a href="home.aspx">Login</a></li>
-						<li><a href="registration.aspx">Registration</a></li>
+						<li><a href="">Gallery</a></li>
 						<li><a href="aboutus.aspx">AboutUs</a></li>
 						<li><a href="contactus.aspx">Contact</a></li>
 					</ul>

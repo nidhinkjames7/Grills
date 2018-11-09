@@ -66,7 +66,7 @@
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
 						<li><a href="home.aspx">Home</a></li>
-						<li><a href="#">Add Gallery</a></li>
+						<li><a href="add_gallery_pics.aspx">Add Gallery</a></li>
                         <li><a href="#">Remove Food</a></li>
 						<li><a href="#">View Bookinig</a></li>
 						<li><a href="#">LogOut</a></li>
@@ -97,11 +97,16 @@
                             <table>
                                 <form method="post" runat="server">
                                     <tr>
-                                       <td><asp:Label ID="lblfoodname" runat="server" Text="Food Name"></asp:Label><asp:TextBox ID="txtfoodname" runat="server" placeholder="Food Name" requred="requried"></asp:TextBox></td>
+                                       <td><asp:Label ID="lblfoodname" runat="server" Text="Food Name"></asp:Label><asp:TextBox ID="txtfoodname" runat="server" placeholder="Food Name" required="requried"></asp:TextBox></td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <asp:Label ID="lblfoodimage" runat="server" Text="Food Image"></asp:Label><asp:FileUpload ID="FileUpload1" runat="server" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Label ID="lblfoodquantity" runat="server" Text="Food Quantity"></asp:Label><asp:TextBox ID="txtfoodquantity" runat="server" placeholder="Food Quantity" required="required"></asp:TextBox>
                                         </td>
                                     </tr>
                                     <tr>
@@ -119,7 +124,8 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <asp:Button ID="btnaddfood" runat="server" Text="Add Food" OnClick="btnaddfood_Click" /></td>
+                                            <asp:Button ID="btnaddfood" runat="server" Text="Add Food" OnClick="btnaddfood_Click" />
+                                        </td>
                                     </tr>
                                  </form>
                             </table>
