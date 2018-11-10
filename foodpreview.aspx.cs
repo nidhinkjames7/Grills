@@ -6,7 +6,10 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
-
+using System.Drawing;
+using System.Windows.Markup;
+using System.Net;
+using System.Web.UI.HtmlControls;
 
 public partial class foodpreview : System.Web.UI.Page
 {
@@ -18,7 +21,7 @@ public partial class foodpreview : System.Web.UI.Page
         Panel1.Controls.Add(new LiteralControl("<tr>"));
         Class1 obj = new Class1();
         obj.getconnection();
-        SqlCommand cmd1 = new SqlCommand("sp_registration", obj.con);
+        SqlCommand cmd1 = new SqlCommand("sp_addfood", obj.con);
         cmd1.CommandType = CommandType.StoredProcedure;
         cmd1.Parameters.Add("@flag", 3);
         DataTable dt = new DataTable();
@@ -26,8 +29,23 @@ public partial class foodpreview : System.Web.UI.Page
         dtadt.Fill(dt);
         for(int i=0;i<dt.Rows.Count;i++)
         {
+            HtmlImage img = new HtmlImage();
+            img.Attributes.Add("class", "");
+            img.Style.Add(HtmlTextWriterStyle.Display, "block");
+            img.Style.Add(HtmlTextWriterStyle.Height, "166px");
+            img.Style.Add(HtmlTextWriterStyle.Width, "278px");
+            img.Src =dt.Rows[i][2].ToString();
+            Panel1.Controls.Add(new LiteralControl("<td><table runat=server>"));
+            Panel1.Controls.Add(new LiteralControl("<tr><td>"));
+            Panel1.Controls.Add(new LiteralControl("<a href=~/booknow.aspx?id=" + dt.Rows[i][0].ToString() + ">"));
+            Panel1.Controls.Add(img);
             
-            Panel1.Controls.Add(new LiteralControl("<td>"))
+            Panel1.Controls.Add(new LiteralControl("</a>"));
+            Panel1.Controls.Add(new LiteralControl("</td></tr>"));
+            Panel1.Controls.Add(new LiteralControl("</table>"));
+            Panel1.Controls.Add(new LiteralControl("</td></tr>"));
+            
         }
+        Panel1.Controls.Add(new LiteralControl("</table>"));
     }
 }
