@@ -89,14 +89,15 @@
 
 						</div>
                             <h3>ADD FOOD ITEM HERE!!!</h3>
-                            <table>
-                                <form method="post" runat="server">
+                            <form method="post" runat="server">
+                                <table>
                                     <tr>
                                        <td><asp:Label ID="lblfoodname" runat="server" Text="Food Name"></asp:Label><asp:TextBox ID="txtfoodname" runat="server" placeholder="Food Name" required="requried"></asp:TextBox></td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <asp:Label ID="lblfoodimage" runat="server" Text="Food Image"></asp:Label><asp:FileUpload ID="FileUpload1" runat="server" />
+                                 
                                         </td>
                                     </tr>
                                     <tr>
@@ -115,15 +116,17 @@
                                         </td>
                                     </tr>
                                     <tr>
-
+                                        <td>
+                                            <asp:Image ID="Image1" runat="server" />
+                                        </td>
                                     </tr>
-                                    <tr>
+                                        <tr>
                                         <td>
                                             <asp:Button ID="btnaddfood" runat="server" Text="Add Food" OnClick="btnaddfood_Click" />
                                         </td>
                                     </tr>
-                                 </form>
                             </table>
+                        </form>
 					</div>
 				</div>
 			</div>
@@ -153,6 +156,8 @@
 
 					<!-- footer nav -->
 					<div class="col-md-6">
+						<ul class="footer-nav">
+							<li><a href="index.html">Home class="col-md-6">
 						<ul class="footer-nav">
 							<li><a href="index.html">Home</a></li>
 							<li><a href="#">About</a></li>

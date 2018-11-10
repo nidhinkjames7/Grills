@@ -59,17 +59,11 @@
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
 						<li><a href="home.aspx">Home</a></li>
-						<li><a href="#">Gallery</a></li>
-       <!--                      <asp:DropDownList ID="foodcategory" runat="server">
-                               <asp:ListItem>Categories</asp:ListItem>
-                                <asp:ListItem>Cake</asp:ListItem>
-                                <asp:ListItem>Biriyani</asp:ListItem>
-                            </asp:DropDownList>         -->
-                        <li><a href="">Category</a></li>    
-                        <li></li>
+                        <li><a href="#">Profile</a></li>
+						<li><a href="gallery.aspx">Gallery</a></li>
 						<li><a href="#">AboutUs</a></li>
 						<li><a href="contactus.aspx">ContactUs</a></li>
-                        <li><a href="#">LogOut</a></li>
+                        <li><a href="logout.aspx">LogOut</a></li>
 					</ul>
 				</nav>
                 </form>
