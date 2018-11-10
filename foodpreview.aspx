@@ -10,7 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>BeFoody</title>
+		<title>Grills</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
@@ -90,29 +90,12 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8">
-							<h1 class="white-text">BeFoody</h1>
+							<h1 class="white-text">Grills</h1>
 							<p class="lead white-text">keep calm and love food.</p>
 
 						</div>
                             <h3>LET'S ORDER!!!</h3>
-                                    <asp:DataList ID="DataList1" runat="server" DataKeyField="food_id" DataSourceID="SqlDataSource1">
-                                        <ItemTemplate>
-                                            food_id:
-                                            <asp:Label Text='<%# Eval("food_id") %>' runat="server" ID="food_idLabel" /><br />
-                                            foodname:
-                                            <asp:Label Text='<%# Eval("foodname") %>' runat="server" ID="foodnameLabel" /><br />
-                                            foodimage:
-                                            <asp:Label Text='<%# Eval("foodimage") %>' runat="server" ID="foodimageLabel" /><br />
-                                            fooddesc:
-                                            <asp:Label Text='<%# Eval("fooddesc") %>' runat="server" ID="fooddescLabel" /><br />
-                                            foodcost:
-                                            <asp:Label Text='<%# Eval("foodcost") %>' runat="server" ID="foodcostLabel" /><br />
-                                            foodquantity:
-                                            <asp:Label Text='<%# Eval("foodquantity") %>' runat="server" ID="foodquantityLabel" /><br />
-                                            <br />
-                                        </ItemTemplate>
-                                    </asp:DataList>
-                                    <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:grillConnectionString %>' SelectCommand="SELECT * FROM [addfood]"></asp:SqlDataSource>
+                        <asp:Panel ID="Panel1" runat="server"></asp:Panel>
                                 
                     </div>
 				</div>
@@ -190,7 +173,9 @@
 		<!-- /Footer -->
 
 		<!-- preloader -->
-		<div id='preloader'><div class='preloader'></div></div>
+		<div id='preloader'><div class='preloader'></div>
+            
+        </div>
 		<!-- /preloader -->
 
 
