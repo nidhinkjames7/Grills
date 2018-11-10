@@ -81,7 +81,20 @@
 							<h1 class="white-text">BeFoody</h1>
 							<p class="lead white-text">keep calm and love food.</p>
 						</div>
-					</div>
+                            <form runat="server">
+
+                                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
+
+                                    <Columns>
+                                        <asp:BoundField DataField="foodname" HeaderText="foodname" SortExpression="foodname"></asp:BoundField>
+                                        <asp:BoundField DataField="foodimage" HeaderText="foodimage" SortExpression="foodimage"></asp:BoundField>
+                                    </Columns>
+                                </asp:GridView>
+
+
+                                <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:grillConnectionString %>' SelectCommand="SELECT [foodname], [foodimage] FROM [gallery]"></asp:SqlDataSource>
+                            </form>                    
+                      </div>
 				</div>
 			</div>
 

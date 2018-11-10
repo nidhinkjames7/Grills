@@ -1,16 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="add_gallery_pics.aspx.cs" Inherits="add_gallery_pics" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-        
-
+      
         <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -66,9 +57,11 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="home.aspx">Home</a></li>
+						<li><a href="adminpage.aspx">Admin Home</a></li>
+                        <li><a href="viewfood.aspx">View Food</a></li>
                         <li><a href="addfood.aspx">Add Food</a></li>
-                        <li><a href="#">Remove Food</a></li>
+                        <li><a href="#">Update Food</a></li>
+                        <li><a href="removefood.aspx">Remove Food</a></li>
 						<li><a href="#">View Bookinig</a></li>
 						<li><a href="#">LogOut</a></li>
 					</ul>
@@ -94,7 +87,7 @@
 							<p class="lead white-text">keep calm and love food.</p>
 						</div>
                         <h3>HAVE IT...!!!</h3>
-                        <form>
+                        <form runat="server">
                             <table>
                                 <tr>
                                     <td>
@@ -110,7 +103,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <asp:Button ID="btnaddimage" runat="server" Text="Add Image" />
+                                        <asp:Button ID="btnaddimage" runat="server" Text="Add Image" OnClick="btnaddimage_Click" />
                                     </td>
                                 </tr>
                             </table>
@@ -206,7 +199,3 @@
 
 
 
-    </div>
-    </form>
-</body>
-</html>

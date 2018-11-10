@@ -1,14 +1,14 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="home.aspx.cs" Inherits="home" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="updatefood.aspx.cs" Inherits="updatefood" %>
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
+        <!DOCTYPE html>
+        <html lang="en">
+	    <head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Grills</title>
+		<title>BeFoody</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
@@ -40,7 +40,7 @@
 					<!-- Logo -->
 					<div class="navbar-brand">
 						<a class="logo" href="index.html">
-							<img src="./img/logo.png" alt="logo">
+							<img src="./img/logo-alt.png" alt="logo">
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -55,11 +55,13 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="home.aspx">Home</a></li>
-						<li><a href="registration.aspx">Registration</a></li>
-						<li><a href="gallery.aspx">Gallery</a></li>
-						<li><a href="#">AboutUs</a></li>
-						<li><a href="contactus.aspx">ContactUs</a></li>
+						<li><a href="adminpage.aspx">Admin Home</a></li>
+                        <li><a href="viewfood.aspx">View Food</a></li>
+                        <li><a href="removefood.aspx">Remove Food</a></li>
+                        <li><a href="#">Update Food</a></li>
+						<li><a href="add_gallery_pics.aspx">Add Gallery</a></li>
+						<li><a href="#">View Bookinig</a></li>
+						<li><a href="#">LogOut</a></li>
 					</ul>
 				</nav>
 				<!-- /Navigation -->
@@ -79,55 +81,32 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8">
-							<h1 class="white-text">Grills</h1>
-							<p class="lead white-text">Keep Calm And Love Food...!!!</p>
-                                <form id="loginform" method="post" runat="server">
-                                    <table>
-                                        <tr>
-                                            <td><asp:TextBox ID="txtusername" runat="server" placeholder="UserName" required="required"></asp:TextBox></td>
-                                            <td><asp:TextBox ID="txtpassword" runat="server" placeholder="Password" required="required" TextMode="Password"></asp:TextBox></td>
-                                            <td><asp:Button ID="submit" runat="server" Text="Submit" OnClick="submit_Click" /></td>
-                                        </tr>						            
-                                        <tr>
-                                            <a href="registration.aspx">SignUp?</a>
-                                        </tr>
-                                    </table>
-                               </form>
-                        </div>
+							<h1 class="white-text">BeFoody</h1>
+							<p class="lead white-text">keep calm and love food.</p>
+
+						</div>
+                            <h3>UPDATE FOOD ITEM HERE!!!</h3>
+                             <form method="post" runat="server">
+
+                                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="food_id" DataSourceID="SqlDataSource1">
+                                     <Columns>
+                                         <asp:BoundField DataField="food_id" HeaderText="food_id" ReadOnly="True" InsertVisible="False" SortExpression="food_id"></asp:BoundField>
+                                         <asp:BoundField DataField="foodname" HeaderText="foodname" SortExpression="foodname"></asp:BoundField>
+                                         <asp:BoundField DataField="foodimage" HeaderText="foodimage" SortExpression="foodimage"></asp:BoundField>
+                                         <asp:BoundField DataField="fooddesc" HeaderText="fooddesc" SortExpression="fooddesc"></asp:BoundField>
+                                         <asp:BoundField DataField="foodcost" HeaderText="foodcost" SortExpression="foodcost"></asp:BoundField>
+                                         <asp:BoundField DataField="foodquantity" HeaderText="foodquantity" SortExpression="foodquantity"></asp:BoundField>
+                                         <asp:CommandField ShowEditButton="True" ButtonType="Button" ShowHeader="True" HeaderText="update food"></asp:CommandField>
+                                     </Columns>
+                                 </asp:GridView>
+
+                                 <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:grillConnectionString %>' SelectCommand="SELECT * FROM [addfood]" UpdateCommand="UPDATE [addfood] set foodname=@foodname,foodimage=@foodimage,fooddesc=@fooddesc,foodcost=@foodcost,foodquantity=@foodquantity where food_id=@food_id"></asp:SqlDataSource>
+                             </form>
 					</div>
 				</div>
 			</div>
-
 		</div>
 		<!-- /Home -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<!-- About -->
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -152,15 +131,16 @@
 
 					<!-- footer nav -->
 					<div class="col-md-6">
-						<ul class="footer-nav"><li><a href="home.aspx">Home</a></li>
-						<li><a href="registration.aspx">Registration</a></li>
-						<li><a href="#">Gallery</a></li>
-						<li><a href="#">AboutUs</a></li>
-						<li><a href="contactus.aspx">ContactUs</a></li>
+						<ul class="footer-nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Courses</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</div>
 					<!-- /footer nav -->
-
+               
 				</div>
 				<!-- /row -->
 
