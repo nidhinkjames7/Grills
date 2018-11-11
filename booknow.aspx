@@ -115,10 +115,10 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <asp:Button ID="btncart" runat="server" Text="Add to Cart" />
+                                        <asp:Button ID="btncart" runat="server" Text="Add to Cart" OnClick="btncart_Click" />
                                     </td>
                                     <td>
-                                        <asp:Button ID="btnbook" runat="server" Text="Book Now" />
+                                        <asp:Button ID="btnbooknow" runat="server" Text="Book Now" OnClick="btnbooknow_Click" />
                                     </td>
                                 </tr>
                           </table>                

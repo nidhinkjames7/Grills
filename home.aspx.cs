@@ -11,7 +11,7 @@ public partial class home : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+       
     }
     protected void submit_Click(object sender, EventArgs e)
     {
@@ -28,11 +28,12 @@ public partial class home : System.Web.UI.Page
         dtadt.Fill(dt);
         if (dt.Rows.Count > 0)
         {
-
+            Session["username"] = txtusername.Text;
             Response.Redirect("foodpreview.aspx?id=" + txtusername.Text);
         }
         else if (txtusername.Text == "Admin" && txtpassword.Text == "admin123")
         {
+            Session["username"] = txtusername.Text;
             Response.Redirect("adminpage.aspx?id=" + txtusername.Text);
         }
         else

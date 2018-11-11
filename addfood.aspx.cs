@@ -39,6 +39,11 @@ public partial class addfood : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
 
+        if (Session["username"].ToString() == "")
+        {
+            Response.Redirect("~/home.aspx");
+        }
+
     }
 
  /*   protected void Button1_Click(object sender, EventArgs e)

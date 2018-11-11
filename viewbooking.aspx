@@ -1,6 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="updatefood.aspx.cs" Inherits="updatefood" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="viewbooking.aspx.cs" Inherits="viewbooking" %>
 
-        <!DOCTYPE html>
+       <!DOCTYPE html>
         <html lang="en">
 	    <head>
 		<meta charset="utf-8">
@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>Grills</title>
+		<title>BeFoody</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
@@ -58,9 +58,10 @@
 						<li><a href="adminpage.aspx">Admin Home</a></li>
                         <li><a href="viewfood.aspx">View Food</a></li>
                         <li><a href="removefood.aspx">Remove Food</a></li>
+                        <li><a href="#">Update Food</a></li>
 						<li><a href="add_gallery_pics.aspx">Add Gallery</a></li>
-						<li><a href="viewbooking.aspx">View Bookinig</a></li>
-						<li><a href="logout.aspx">LogOut</a></li>
+						<li><a href="#">View Bookinig</a></li>
+						<li><a href="#">LogOut</a></li>
 					</ul>
 				</nav>
 				<!-- /Navigation -->
@@ -80,26 +81,26 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8">
-							<h1 class="white-text">BeFoody</h1>
+							<h1 class="white-text">Grills</h1>
 							<p class="lead white-text">keep calm and love food.</p>
 
 						</div>
-                            <h3>UPDATE FOOD ITEM HERE!!!</h3>
+                            <h3>BOOKINGS...!!!</h3>
                              <form method="post" runat="server">
 
-                                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="food_id" DataSourceID="SqlDataSource1">
+                                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="book_id" DataSourceID="SqlDataSource1">
                                      <Columns>
-                                         <asp:BoundField DataField="food_id" HeaderText="food_id" ReadOnly="True" InsertVisible="False" SortExpression="food_id"></asp:BoundField>
-                                         <asp:BoundField DataField="foodname" HeaderText="foodname" SortExpression="foodname"></asp:BoundField>
-                                         <asp:BoundField DataField="foodimage" HeaderText="foodimage" SortExpression="foodimage"></asp:BoundField>
-                                         <asp:BoundField DataField="fooddesc" HeaderText="fooddesc" SortExpression="fooddesc"></asp:BoundField>
-                                         <asp:BoundField DataField="foodcost" HeaderText="foodcost" SortExpression="foodcost"></asp:BoundField>
+                                         <asp:BoundField DataField="book_id" HeaderText="book_id" ReadOnly="True" InsertVisible="False" SortExpression="book_id"></asp:BoundField>
+                                         <asp:BoundField DataField="username" HeaderText="username" SortExpression="username"></asp:BoundField>
+                                         <asp:BoundField DataField="food_id" HeaderText="food_id" SortExpression="food_id"></asp:BoundField>
                                          <asp:BoundField DataField="foodquantity" HeaderText="foodquantity" SortExpression="foodquantity"></asp:BoundField>
-                                         <asp:CommandField ShowEditButton="True" ButtonType="Button" ShowHeader="True" HeaderText="update food"></asp:CommandField>
+                                         <asp:BoundField DataField="status" HeaderText="status" SortExpression="status"></asp:BoundField>
+                                         <asp:BoundField DataField="delivery" HeaderText="delivery" SortExpression="delivery"></asp:BoundField>
+                                     <asp:CommandField ShowEditButton="True" ButtonType="Button" ShowHeader="True" HeaderText="Edit Status"></asp:CommandField>
                                      </Columns>
                                  </asp:GridView>
 
-                                 <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:grillConnectionString %>' SelectCommand="SELECT * FROM [addfood]" UpdateCommand="UPDATE [addfood] set foodname=@foodname,foodimage=@foodimage,fooddesc=@fooddesc,foodcost=@foodcost,foodquantity=@foodquantity where food_id=@food_id"></asp:SqlDataSource>
+                                 <asp:SqlDataSource runat="server" ID="SqlDataSource1" ConnectionString='<%$ ConnectionStrings:grillConnectionString %>' SelectCommand="SELECT * FROM [booking]" UpdateCommand="UPDATE [booking] set delivery=@delivery where book_id=@book_id"></asp:SqlDataSource>
                              </form>
 					</div>
 				</div>
@@ -188,4 +189,3 @@
 
 	</body>
 </html>
-

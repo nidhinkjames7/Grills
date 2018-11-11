@@ -9,6 +9,9 @@ public partial class viewfood : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Session["username"].ToString() == "")
+        {
+            Response.Redirect("~/home.aspx");
+        }
     }
 }

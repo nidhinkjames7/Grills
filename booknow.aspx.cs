@@ -10,11 +10,21 @@ using System.Drawing;
 using System.Windows.Markup;
 using System.Net;
 using System.Web.UI.HtmlControls;
+using System.Configuration;
+using System.Text;
+
+
 
 public partial class booknow : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["username"].ToString() == "")
+        {
+            Response.Redirect("~/home.aspx");
+        }
+
+
         Panel1.Controls.Add(new LiteralControl("<table style=width:100%>"));
         Panel1.Controls.Add(new LiteralControl("<tr>"));
         Class1 obj = new Class1();
@@ -60,10 +70,6 @@ public partial class booknow : System.Web.UI.Page
         {
             Response.Write("<script>alert('Food Item Not Available')</script>");
         }
-        else
-        {
-            int avl=Int32.Parse(ViewState["qty"].ToString()) - Int32.Parse(txtquantity.Text);
-        }
     }
     public void calculate(object sender, EventArgs e)
     {
@@ -71,4 +77,56 @@ public partial class booknow : System.Web.UI.Page
         lbltamt.Text = a.ToString();
     }
 
+    public void btnbooknow_Click(object sender, EventArgs e)
+    {
+
+        Class1 obj = new Class1();
+        obj.getconnection();
+        SqlCommand cmd1 = new SqlCommand("sp_booking", obj.con);
+        cmd1.CommandType = CommandType.StoredProcedure;
+        cmd1.Parameters.Add("@flag", 1);
+        cmd1.Parameters.Add("@username",Session["username"].ToString() );
+        cmd1.Parameters.Add("@food_id",Request.QueryString["id"].ToString());
+        cmd1.Parameters.Add("@foodquantity", txtquantity.Text);
+        cmd1.Parameters.Add("@status", 0);
+        cmd1.Parameters.Add("@delivery", "not delivered");
+        cmd1.ExecuteNonQuery();
+        update_qty();
+        Response.Write("<script>alert('Booking Successful')</script>");
+        txtquantity.Text = "";
+        lbltamt.Text = "";
+    }
+    protected void update_qty()
+    {
+        int qnty = Int32.Parse(ViewState["qty"].ToString()) - Int32.Parse(txtquantity.Text);
+        Class1 obj = new Class1();
+        obj.getconnection();
+
+        SqlCommand cmd1 = new SqlCommand("sp_addfood", obj.con);
+        cmd1.CommandType = CommandType.StoredProcedure;
+        cmd1.Parameters.Add("@flag", 5);
+        cmd1.Parameters.Add("@food_id", Request.QueryString["id"].ToString());
+        cmd1.Parameters.Add("@foodquantity", qnty);
+        cmd1.ExecuteNonQuery();
+    }
+    public void btncart_Click(object sender, EventArgs e)
+    {
+
+
+        Class1 obj = new Class1();
+        obj.getconnection();
+        SqlCommand cmd1 = new SqlCommand("sp_booking", obj.con);
+        cmd1.CommandType = CommandType.StoredProcedure;
+        cmd1.Parameters.Add("@flag", 1);
+        cmd1.Parameters.Add("@username", Session["username"].ToString());
+        cmd1.Parameters.Add("@food_id", Request.QueryString["id"].ToString());
+        cmd1.Parameters.Add("@foodquantity", txtquantity.Text);
+        cmd1.Parameters.Add("@status", 1);
+        cmd1.Parameters.Add("@delivery", "not delivered");
+        cmd1.ExecuteNonQuery();
+        Response.Write("<script>alert('Added to Your Wishlist')</script>");
+        txtquantity.Text = "";
+        lbltamt.Text = "";
+
+    }
 }

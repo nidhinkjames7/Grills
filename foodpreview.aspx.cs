@@ -15,6 +15,11 @@ public partial class foodpreview : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (Session["username"].ToString() == "")
+        {
+            Response.Redirect("~/home.aspx");
+        }
+
         int c = 0;
         Panel1.Controls.Add(new LiteralControl("<table style=width:100%>"));
         Panel1.Controls.Add(new LiteralControl("<tr>"));
@@ -55,14 +60,7 @@ public partial class foodpreview : System.Web.UI.Page
                 Panel1.Controls.Add(new LiteralControl("<tr><td>" + dt.Rows[i][1].ToString()));
                 Panel1.Controls.Add(new LiteralControl("</td></tr>"));
                 Panel1.Controls.Add(new LiteralControl("</table>"));
-                Panel1.Controls.Add(new LiteralControl("</td>"));
-            
-            
-           
-                
-                
-                
-            
+                Panel1.Controls.Add(new LiteralControl("</td>"));            
         }
         Panel1.Controls.Add(new LiteralControl("</tr>"));
         Panel1.Controls.Add(new LiteralControl("</table>"));

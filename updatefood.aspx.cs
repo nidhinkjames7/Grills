@@ -13,7 +13,10 @@ public partial class updatefood : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        if (Session["username"].ToString() == "")
+        {
+            Response.Redirect("~/home.aspx");
+        }
     }
 
 /*    protected void btnupdatefood_Click(object sender, EventArgs e)

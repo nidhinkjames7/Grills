@@ -63,8 +63,8 @@
 						<li><a href="removefood.aspx">Remove Food</a></li>
                         <li><a href="updatefood.aspx">Update Food</a></li>
                         <li><a href="add_gallery_pics.aspx">Add Gallery</a></li>
-						<li><a href="#">View Bookinig</a></li>
-						<li><a href="#">LogOut</a></li>
+						<li><a href="viewbooking.aspx">View Bookinig</a></li>
+						<li><a href="logout.aspx">Logout</a></li>
 					</ul>
 				</nav>
 				<!-- /Navigation -->
