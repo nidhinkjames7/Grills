@@ -32,7 +32,7 @@
 
     </head>
 	<body>
-
+        <form runat="server">
 		<!-- Header -->
 		<header id="header" class="transparent-nav">
 			<div class="container">
@@ -54,7 +54,6 @@
 				</div>
 
 				<!-- Navigation -->
-                <form runat="server">
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
 						<li><a href="home.aspx">Home</a></li>
@@ -65,7 +64,6 @@
                         <li><a href="logout.aspx">Logout</a></li>
 					</ul>
 				</nav>
-                </form>
 				<!-- /Navigation -->
 
 			</div>
@@ -87,9 +85,34 @@
 							<p class="lead white-text">keep calm and love food.</p>
 
 						</div>
-                            <h3>BOOK NOW...!!!</h3>
-                        <asp:Panel ID="Panel1" runat="server"></asp:Panel>
-                                
+                            <table width="50">
+                                <tr>
+                                    <td><h3>BOOK NOW...!!!</h3></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:Panel ID="Panel1" runat="server">
+                                        </asp:Panel>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td>
+                                            <asp:Label ID="lblquantity" runat="server" Text="Enter Quantity"></asp:Label>
+
+                                        </td>
+                                        <td>
+                                            <asp:TextBox ID="txtquantity" runat="server" OnTextChanged="quantity"></asp:TextBox>
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td>
+                                        <asp:Button ID="btncart" runat="server" Text="Add to Cart" />
+                                    </td>
+                                    <td>
+                                        <asp:Button ID="btnbook" runat="server" Text="Book Now" />
+                                    </td>
+                                </tr>
+                          </table>                
                     </div>
 				</div>
 			</div>
@@ -176,6 +199,6 @@
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-
+       </form>
 	</body>
 </html>

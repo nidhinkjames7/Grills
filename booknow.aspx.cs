@@ -27,5 +27,34 @@ public partial class booknow : System.Web.UI.Page
         SqlDataAdapter dtadt = new SqlDataAdapter(cmd1);
         dtadt.Fill(dt);
 
+        if( dt.Rows.Count>0)
+        {
+
+            HtmlImage img = new HtmlImage();
+            img.Attributes.Add("class", "");
+            img.Style.Add(HtmlTextWriterStyle.Display, "block");
+            img.Style.Add(HtmlTextWriterStyle.Height, "166px");
+            img.Style.Add(HtmlTextWriterStyle.Width, "278px");
+            img.Src = dt.Rows[0][2].ToString();
+            Panel1.Controls.Add(new LiteralControl("<table runat=server>"));
+            Panel1.Controls.Add(new LiteralControl("<tr><td>"));
+            Panel1.Controls.Add(img);
+            Panel1.Controls.Add(new LiteralControl("</td></tr>"));
+            Panel1.Controls.Add(new LiteralControl("<tr><td>Food Name</td><td>" + dt.Rows[0][1].ToString()));
+            Panel1.Controls.Add(new LiteralControl("</td></tr>"));
+            Panel1.Controls.Add( new LiteralControl("<tr><td> Food Description</td><td>"+ dt.Rows[0][3].ToString()));
+            Panel1.Controls.Add(new LiteralControl("</td></tr>"));
+            Panel1.Controls.Add(new LiteralControl("<tr><td>Food Cost</td><td>" + dt.Rows[0][4].ToString()));
+            Panel1.Controls.Add(new LiteralControl("</td></tr>"));
+            Panel1.Controls.Add(new LiteralControl("</table>"));
+            ViewState["qty"] = dt.Rows[0][5].ToString();
+        }
+
+
+        
     } 
+    public void quantity(object sender, EventArgs e)
+    {
+
+    }
 }
