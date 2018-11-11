@@ -17,7 +17,6 @@ public partial class foodpreview : System.Web.UI.Page
     {
         int c = 0;
         Panel1.Controls.Add(new LiteralControl("<table style=width:100%>"));
-
         Panel1.Controls.Add(new LiteralControl("<tr>"));
         Class1 obj = new Class1();
         obj.getconnection();

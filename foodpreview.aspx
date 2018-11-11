@@ -63,7 +63,7 @@
 						<li><a href="gallery.aspx">Gallery</a></li>
 						<li><a href="#">AboutUs</a></li>
 						<li><a href="contactus.aspx">ContactUs</a></li>
-                        <li><a href="logout.aspx">LogOut</a></li>
+                        <li><a href="logout.aspx">Logout</a></li>
 					</ul>
 				</nav>
                 </form>
