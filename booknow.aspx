@@ -83,9 +83,8 @@
 						<div class="col-md-8">
 							<h1 class="white-text">Grills</h1>
 							<p class="lead white-text">keep calm and love food.</p>
-
 						</div>
-                            <table width="50">
+                            <table width="100">
                                 <tr>
                                     <td><h3>BOOK NOW...!!!</h3></td>
                                 </tr>
@@ -95,15 +94,25 @@
                                         </asp:Panel>
                                     </td>
                                 </tr>
-                                    <tr>
-                                        <td>
-                                            <asp:Label ID="lblquantity" runat="server" Text="Enter Quantity"></asp:Label>
-
-                                        </td>
-                                        <td>
-                                            <asp:TextBox ID="txtquantity" runat="server" OnTextChanged="quantity"></asp:TextBox>
-                                        </td>
-                                    </tr>
+                                <tr>
+                                    <td>
+                                        <asp:Label ID="lblquantity" runat="server" Text="Enter Quantity"></asp:Label>
+                                    </td>
+                                    <td>
+                                         <asp:TextBox ID="txtquantity" runat="server" OnTextChanged="quantity"></asp:TextBox>
+                                     </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:Label ID="lbltcost" runat="server" Text="Total Cost"></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:Label ID="lbltamt" runat="server" ></asp:Label>
+                                    </td>
+                                    <td>
+                                        <asp:Button ID="btncalculate" runat="server" Text="Calculate" OnClick="calculate"/>
+                                    </td>
+                                </tr>
                                 <tr>
                                     <td>
                                         <asp:Button ID="btncart" runat="server" Text="Add to Cart" />

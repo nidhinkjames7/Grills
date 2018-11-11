@@ -48,13 +48,27 @@ public partial class booknow : System.Web.UI.Page
             Panel1.Controls.Add(new LiteralControl("</td></tr>"));
             Panel1.Controls.Add(new LiteralControl("</table>"));
             ViewState["qty"] = dt.Rows[0][5].ToString();
+            ViewState["amt"] = dt.Rows[0][4].ToString();
         }
 
-
+       
         
     } 
     public void quantity(object sender, EventArgs e)
     {
-
+        if(Int32.Parse(txtquantity.Text)>Int32.Parse(ViewState["qty"].ToString()))
+        {
+            Response.Write("<script>alert('Food Item Not Available')</script>");
+        }
+        else
+        {
+            int avl=Int32.Parse(ViewState["qty"].ToString()) - Int32.Parse(txtquantity.Text);
+        }
     }
+    public void calculate(object sender, EventArgs e)
+    {
+        int a = Int32.Parse(txtquantity.Text) * Int32.Parse(ViewState["amt"].ToString());
+        lbltamt.Text = a.ToString();
+    }
+
 }
