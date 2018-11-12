@@ -13,9 +13,9 @@ public partial class adminpage : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        if (Session["username"].ToString() == "")
+        if (Session["username"].ToString() == null)
         {
-            Response.Redirect("~/Guest/default.aspx");
+            Response.Redirect("~/home.aspx");
         }
     }
 }

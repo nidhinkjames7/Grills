@@ -23,6 +23,7 @@
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="css/grillstyle.css" />
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -57,7 +58,7 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="home.aspx">Home</a></li>
+						<li><a href="adminpage.aspx">Home</a></li>
                         <li><a href="viewfood.aspx">View Food</a></li>
                         <li><a href="addfood.aspx">Add Food</a></li>
 						<li><a href="removefood.aspx">Remove Food</a></li>

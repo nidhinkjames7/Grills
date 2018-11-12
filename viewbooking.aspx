@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		 <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-		<title>BeFoody</title>
+		<title>Grills</title>
 
 		<!-- Google font -->
 		<link href="https://fonts.googleapis.com/css?family=Lato:700%7CMontserrat:400,600" rel="stylesheet">
@@ -21,6 +21,7 @@
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="css/grillstyle.css" />
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -55,13 +56,13 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="adminpage.aspx">Admin Home</a></li>
+						<li><a href="adminpage.aspx">Home</a></li>
                         <li><a href="viewfood.aspx">View Food</a></li>
-                        <li><a href="removefood.aspx">Remove Food</a></li>
-                        <li><a href="#">Update Food</a></li>
-						<li><a href="add_gallery_pics.aspx">Add Gallery</a></li>
-						<li><a href="#">View Bookinig</a></li>
-						<li><a href="#">LogOut</a></li>
+                        <li><a href="addfood.aspx">Add Food</a></li>
+						<li><a href="removefood.aspx">Remove Food</a></li>
+                        <li><a href="updatefood.aspx">Update Food</a></li>
+                        <li><a href="add_gallery_pics.aspx">Add Gallery</a></li>
+						<li><a href="logout.aspx">Logout</a></li>
 					</ul>
 				</nav>
 				<!-- /Navigation -->

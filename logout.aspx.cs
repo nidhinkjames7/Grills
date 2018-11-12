@@ -22,8 +22,8 @@ public partial class logout : System.Web.UI.Page
         }
         protected void Timer1_Tick(object sender, EventArgs e)
         {
-            string redirectUrl = FormsAuthentication.LoginUrl + "?ReturnUrl=~/home.aspx";
-            FormsAuthentication.SignOut();
-            Response.Redirect(redirectUrl);
+            //string redirectUrl = FormsAuthentication.LoginUrl + "?ReturnUrl=~/home.aspx";
+            //FormsAuthentication.SignOut();
+            //Response.Redirect(redirectUrl);
         }
 }
