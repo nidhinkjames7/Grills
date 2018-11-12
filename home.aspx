@@ -85,8 +85,8 @@
                                 <form id="loginform" method="post" runat="server">
                                     <table>
                                         <tr>
-                                            <td><asp:TextBox ID="txtusername" runat="server" placeholder="UserName" required="required"></asp:TextBox></td>
-                                            <td><asp:TextBox ID="txtpassword" runat="server" placeholder="Password" required="required" TextMode="Password"></asp:TextBox></td>
+                                            <td><asp:Label ID="lblusername" runat="server" Text="Username"></asp:Label><asp:TextBox ID="txtusername" runat="server" placeholder="UserName" required="required"></asp:TextBox></td>
+                                            <td><asp:Label ID="lblpassword" runat="server" Text="Password"></asp:Label><asp:TextBox ID="txtpassword" runat="server" placeholder="Password" required="required" TextMode="Password"></asp:TextBox></td>
                                             <td><asp:Button ID="submit" runat="server" Text="Submit" OnClick="submit_Click" /></td>
                                         </tr>						            
                                         <tr>

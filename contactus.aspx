@@ -57,7 +57,7 @@
 					<ul class="main-menu nav navbar-nav navbar-right">
 						<li><a href="home.aspx">Home</a></li>
 						<li><a href="registration.aspx">Registration</a></li>
-						<li><a href="#">Gallery</a></li>
+						<li><a href="gallery.aspx">Gallery</a></li>
 						<li><a href="#">AboutUs</a></li>
 						<li><a href="contactus.aspx">ContactUs</a></li>
 					</ul>
@@ -119,9 +119,9 @@
 					<div class="col-md-5 col-md-offset-1">
 						<h4>Contact Information</h4>
 						<ul class="contact-details">
-							<li><i class="fa fa-envelope"></i>Educate@email.com</li>
-							<li><i class="fa fa-phone"></i>122-547-223-45</li>
-							<li><i class="fa fa-map-marker"></i>4476 Clement Street</li>
+							<li><i class="fa fa-envelope"></i>grills@gmail.com</li>
+							<li><i class="fa fa-phone"></i>+91-9995715318</li>
+							<li><i class="fa fa-map-marker"></i>Marthahalli,Bangalore</li>
 						</ul>
 
 						<!-- contact map -->
@@ -163,8 +163,8 @@
 					<div class="col-md-6">
 						<ul class="footer-nav">
 					        <li><a href="home.aspx">Home</a></li>
-						    <li><a href="#">Registration</a></li>
-						    <li><a href="#">Gallery</a></li>
+						    <li><a href="registration.aspx">Registration</a></li>
+						    <li><a href="gallery.aspx">Gallery</a></li>
 						    <li><a href="#">AboutUs</a></li>
 						    <li><a href="contactus.aspx">ContactUs</a></li>
 						</ul>
@@ -193,7 +193,7 @@
 					<!-- copyright -->
 					<div class="col-md-8 col-md-pull-4">
 						<div class="footer-copyright">
-							<span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></span>
+							<span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Grills</a></span>
 						</div>
 					</div>
 					<!-- /copyright -->
