@@ -40,8 +40,8 @@
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
-						<a class="logo" href="index.html">
-							<img src="./img/logo-alt.png" alt="logo">
+						<a class="logo" href="home.aspx">
+							<h1>Grills</h1>
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -81,7 +81,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8">
-							<h1 class="white-text">BeFoody</h1>
+							<h1 class="white-text">Grills</h1>
 							<p class="lead white-text">keep calm and love food.</p>
 
 						</div>
@@ -122,8 +122,8 @@
 					<!-- footer logo -->
 					<div class="col-md-6">
 						<div class="footer-logo">
-							<a class="logo" href="index.html">
-								<img src="./img/logo.png" alt="logo">
+							<a class="logo" href="home.aspx">
+								<h1>Grills</h1>
 							</a>
 						</div>
 					</div>
@@ -132,11 +132,10 @@
 					<!-- footer nav -->
 					<div class="col-md-6">
 						<ul class="footer-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Courses</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="home.aspx">Home</a></li>
+							<li><a href="aboutus.aspx">AboutUs</a></li>
+							<li><a href="gallery.aspx">Gallery</a></li>
+						    <li><a href="contactus.aspx">ContactUs</a></li>
 						</ul>
 					</div>
 					<!-- /footer nav -->
@@ -163,7 +162,7 @@
 					<!-- copyright -->
 					<div class="col-md-8 col-md-pull-4">
 						<div class="footer-copyright">
-							<span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></span>
+							<span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Grills</a></span>
 						</div>
 					</div>
 					<!-- /copyright -->

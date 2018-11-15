@@ -41,8 +41,8 @@
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
-						<a class="logo" href="index.html">
-							<img src="./img/logo-alt.png" alt="logo">
+						<a class="logo" href="home.aspx">
+							<h1>Grills</h1>
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -57,11 +57,10 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="home.aspx">Home</a></li>
-                        <li><a href="#">Profile</a></li>
-						<li><a href="gallery.aspx">Gallery</a></li>
-						<li><a href="#">AboutUs</a></li>
-						<li><a href="contactus.aspx">ContactUs</a></li>
+						<li><a href="foodpreview.aspx">My Home</a></li>
+                        <li><a href="user_profile.aspx">Profile</a></li>												
+                        <li><a href="mycart.aspx">My Cart</a></li>
+						<li><a href="mybookings.aspx">My Bookings</a></li>
                         <li><a href="logout.aspx">Logout</a></li>
 					</ul>
 				</nav>
@@ -143,8 +142,8 @@
 					<!-- footer logo -->
 					<div class="col-md-6">
 						<div class="footer-logo">
-							<a class="logo" href="index.html">
-								<img src="./img/logo.png" alt="logo">
+							<a class="logo" href="home.aspx">
+                                <h1>Grills</h1>
 							</a>
 						</div>
 					</div>
@@ -153,11 +152,10 @@
 					<!-- footer nav -->
 					<div class="col-md-6">
 						<ul class="footer-nav">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="#">About</a></li>
-							<li><a href="#">Courses</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="home.aspx">Home</a></li>
+							<li><a href="aboutus.aspx">AboutUs</a></li>
+							<li><a href="gallery.aspx">Gallery</a></li>
+						    <li><a href="contactus.aspx">ContactUs</a></li>
 						</ul>
 					</div>
 					<!-- /footer nav -->

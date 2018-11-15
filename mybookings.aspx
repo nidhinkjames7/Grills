@@ -1,8 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="contactus.aspx.cs" Inherits="contactus" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="mybookings.aspx.cs" Inherits="mybookings" %>
 
 <!DOCTYPE html>
-<html lang="en">
-	<head>
+        <html lang="en">
+	    <head runat="server">
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,6 +21,7 @@
 
 		<!-- Custom stlylesheet -->
 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="css/grillstyle.css" />
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -31,9 +32,9 @@
 
     </head>
 	<body>
-
+        <form runat="server">
 		<!-- Header -->
-		<header id="header">
+		<header id="header" class="transparent-nav">
 			<div class="container">
 
 				<div class="navbar-header">
@@ -55,11 +56,10 @@
 				<!-- Navigation -->
 				<nav id="nav">
 					<ul class="main-menu nav navbar-nav navbar-right">
-						<li><a href="home.aspx">Home</a></li>
-						<li><a href="registration.aspx">Registration</a></li>
-						<li><a href="gallery.aspx">Gallery</a></li>
-						<li><a href="aboutus.aspx">AboutUs</a></li>
-						<li><a href="contactus.aspx">ContactUs</a></li>
+						<li><a href="foodpreview.aspx">My Home</a></li>
+                        <li><a href="user_profile.aspx">Profile</a></li>
+						<li><a href="mycart.aspx">My Cart</a></li>
+                        <li><a href="logout.aspx">Logout</a></li>
 					</ul>
 				</nav>
 				<!-- /Navigation -->
@@ -68,77 +68,38 @@
 		</header>
 		<!-- /Header -->
 
-		<!-- Hero-area -->
-		<div class="hero-area section">
+		<!-- Home -->
+		<div id="home" class="hero-area">
 
 			<!-- Backgound Image -->
-			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/page-background.jpg)"></div>
+			<div class="bg-image bg-parallax overlay" style="background-image:url(./img/bk2.jpeg)"></div>
 			<!-- /Backgound Image -->
 
-			<div class="container">
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 text-center">
-						<ul class="hero-area-tree">
-							<li><a href="home.aspx">Home</a></li>
-							<li>Contact</li>
-						</ul>
-						<h1 class="white-text">Get In Touch</h1>
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<!-- /Hero-area -->
-
-		<!-- Contact -->
-		<div id="contact" class="section">
-
-			<!-- container -->
-			<div class="container">
-
-				<!-- row -->
-				<div class="row">
-
-					<!-- contact form -->
-					<div class="col-md-6">
-						<div class="contact-form">
-							<h4>Send A Message</h4>
-							<form runat="server">
-                                <asp:TextBox ID="name" runat="server" placeholder="Name" required="required"></asp:TextBox>
-                                <asp:TextBox ID="email" runat="server" placeholder="Email" required="required"></asp:TextBox>
-                                <asp:TextBox ID="subject" runat="server" placeholder="Subject" required="required"></asp:TextBox>
-                                <asp:TextBox ID="message" runat="server" TextMode="MultiLine" required="required"></asp:TextBox>
-								<button class="main-button icon-button pull-right" name="btncontact" onClick="btncontact_Click">Send Message</button> -->
-							</form>
+			<div class="home-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<h1 class="white-text">Grills</h1>
+							<p class="lead white-text">keep calm and love food.</p>
 						</div>
-					</div>
-					<!-- /contact form -->
-
-					<!-- contact information -->
-					<div class="col-md-5 col-md-offset-1">
-						<h4>Contact Information</h4>
-						<ul class="contact-details">
-							<li><i class="fa fa-envelope"></i>grills@gmail.com</li>
-							<li><i class="fa fa-phone"></i>+91-9995715318</li>
-							<li><i class="fa fa-map-marker"></i>Marthahalli,Bangalore</li>
-						</ul>
-
-						<!-- contact map -->
-						<div id="contact-map"></div>
-						<!-- /contact map -->
-
-					</div>
-					<!-- contact information -->
-
+                            <table>
+                                <tr>
+                                    <td><h3>MY BOOKINGS...!!!</h3></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <asp:Panel ID="Panel1" runat="server">
+                                        </asp:Panel>
+                                    </td>
+                                </tr>
+                          </table>                
+                    </div>
 				</div>
-				<!-- /row -->
-
 			</div>
-			<!-- /container -->
-
 		</div>
-		<!-- /Contact -->
+		<!-- /Home -->
+
+
 
 		<!-- Footer -->
 		<footer id="footer" class="section">
@@ -153,7 +114,7 @@
 					<div class="col-md-6">
 						<div class="footer-logo">
 							<a class="logo" href="home.aspx">
-								<<h1>Grills</h1>
+								<h1>Grills</h1>
 							</a>
 						</div>
 					</div>
@@ -162,14 +123,14 @@
 					<!-- footer nav -->
 					<div class="col-md-6">
 						<ul class="footer-nav">
-					        <li><a href="home.aspx">Home</a></li>
+							<li><a href="home.aspx">Home</a></li>
 							<li><a href="aboutus.aspx">AboutUs</a></li>
 							<li><a href="gallery.aspx">Gallery</a></li>
 						    <li><a href="contactus.aspx">ContactUs</a></li>
 						</ul>
 					</div>
 					<!-- /footer nav -->
-
+               
 				</div>
 				<!-- /row -->
 
@@ -192,7 +153,7 @@
 					<!-- copyright -->
 					<div class="col-md-8 col-md-pull-4">
 						<div class="footer-copyright">
-							<span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Grills</a></span>
+							<span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></span>
 						</div>
 					</div>
 					<!-- /copyright -->
@@ -207,16 +168,16 @@
 		<!-- /Footer -->
 
 		<!-- preloader -->
-		<div id='preloader'><div class='preloader'></div></div>
+		<div id='preloader'><div class='preloader'></div>
+            
+        </div>
 		<!-- /preloader -->
 
 
 		<!-- jQuery Plugins -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-		<script type="text/javascript" src="js/google-map.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-
+       </form>
 	</body>
 </html>

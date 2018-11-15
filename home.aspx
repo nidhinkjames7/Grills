@@ -40,8 +40,9 @@
 				<div class="navbar-header">
 					<!-- Logo -->
 					<div class="navbar-brand">
-						<a class="logo" href="index.html">
-							<img src="./img/logo.png" alt="logo">
+						<a class="logo" href="home.aspx">
+							<!--<img src="./img/logo.png" alt="logo">-->
+                            <h1>Grills</h1>
 						</a>
 					</div>
 					<!-- /Logo -->
@@ -102,36 +103,6 @@
 		</div>
 		<!-- /Home -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<!-- About -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<!-- Footer -->
 		<footer id="footer" class="section">
 
@@ -144,8 +115,8 @@
 					<!-- footer logo -->
 					<div class="col-md-6">
 						<div class="footer-logo">
-							<a class="logo" href="index.html">
-								<img src="./img/logo.png" alt="logo">
+							<a class="logo" href="home.aspx">
+								<h1>Grills</h1>
 							</a>
 						</div>
 					</div>
@@ -155,8 +126,8 @@
 					<div class="col-md-6">
 						<ul class="footer-nav"><li><a href="home.aspx">Home</a></li>
 						<li><a href="registration.aspx">Registration</a></li>
-						<li><a href="#">Gallery</a></li>
-						<li><a href="#">AboutUs</a></li>
+						<li><a href="gallery.aspx">Gallery</a></li>
+						<li><a href="aboutus.aspx">AboutUs</a></li>
 						<li><a href="contactus.aspx">ContactUs</a></li>
 						</ul>
 					</div>
