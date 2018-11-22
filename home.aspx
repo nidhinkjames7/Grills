@@ -60,7 +60,7 @@
 						<li><a href="home.aspx">Home</a></li>
 						<li><a href="registration.aspx">Registration</a></li>
 						<li><a href="gallery.aspx">Gallery</a></li>
-						<li><a href="#">AboutUs</a></li>
+						<li><a href="aboutus.aspx">AboutUs</a></li>
 						<li><a href="contactus.aspx">ContactUs</a></li>
 					</ul>
 				</nav>
@@ -155,7 +155,7 @@
 					<!-- copyright -->
 					<div class="col-md-8 col-md-pull-4">
 						<div class="footer-copyright">
-							<span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Colorlib</a></span>
+							<span>&copy; Copyright 2018. All Rights Reserved. | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com">Grills</a></span>
 						</div>
 					</div>
 					<!-- /copyright -->
